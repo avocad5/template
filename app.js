@@ -3,6 +3,8 @@ const userid = '5d773c885b1f435931998d8e' //여기에 자기 유저아이디를 
 const gitname = 'avocad5' //여기에 자기 깃허브아이디를 입력하세요
 const nickname = '아보카도' //여기에 자기 별명을 입력하세요
 const myment = '더 참신하게, 더 재미있게, 더 멋지게' //여기에 상태메시지를 
+const mywork = '알까기의왕' //여기에 자신의 대표작품을 입력하세요
+const career = '2년' //여기에 자신의 경력을 입력하세요
 const explanation = '코딩과 수학을 좋아하는 평법한 중1' //여기에 자기소개를 입력하세요
 
 const projectname = ['3d ball run','알까기의왕','엔플러스엔진']; //여기에 자기 엔트리작품 이름을 입력하세요
@@ -20,5 +22,5 @@ document.querySelector("body > div.name").innerHTML = name
 document.querySelector("body > div.ment").innerHTML = myment
 document.querySelector("body > div.profile > a").href = `https://playentry.org/${name}`
 document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
-document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>`
+document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>대표작 : ${mywork}</p><p>경력 : ${career}</p><p>소개 : ${explanation}</p>`
 document.querySelector("body > div.footer").innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
