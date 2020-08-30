@@ -8,5 +8,5 @@ const projectment = ['렉 안걸리는 3d!','인공지능과 함께 알까기를
 const projectid = ['5e3f6015960df10024ab07a7','5e00a9134a413900566992bb','5e95ba64614b6000ec78f37f'] //여기에 자기 엔트리작품 id를 입력하세요
 
 for(var i = 0; i<projectname.length; i++){ //버튼 생성
-  document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img src="${i-2}.png"><div><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
+  document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,5)}/${projectid[i]}.png"><div><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
 }
