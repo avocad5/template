@@ -1,5 +1,6 @@
 const name = 'avocad5' //여기에 자기 엔트리아이디를 입력하세요
 const ninkname = '아보카도' //여기에 자기 별명을 입력하세요
+const explanation = '코딩과 수학을 좋아하는 평법한 중1' //여기에 자기소개를 입력하세요
 
 const projectname = ['3d ball run','알까기의왕','엔플러스엔진']; //여기에 자기 엔트리작품 이름을 입력하세요
 
