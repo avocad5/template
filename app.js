@@ -1,4 +1,5 @@
 const name = 'avocad5' //여기에 자기 엔트리아이디를 입력하세요
+const gitname = 'avocad5' //여기에 자기 깃허브아이디를 입력하세요
 const nickname = '아보카도' //여기에 자기 별명을 입력하세요
 const myment = '더 참신하게, 더 재미있게, 더 멋지게' //여기에 상태메시지를 
 const explanation = '코딩과 수학을 좋아하는 평법한 중1' //여기에 자기소개를 입력하세요
@@ -17,3 +18,4 @@ document.title = `${nickname}의 공식사이트`
 document.getElementByClassName('name')[0].innerHTML = name
 document.getElementByClassName('ment')[0].innerHTML = myment
 document.getElementByClassName('about')[0].innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>`
+document.getElementByClassName('footer')[0].innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
