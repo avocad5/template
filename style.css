@@ -1,0 +1,154 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+body{
+  margin: 0;
+}
+
+
+.container {
+  z-index:-1;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.head {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.head path{
+  stroke: none;
+  fill:#87FFB7;
+}
+
+
+.name{
+  margin-top:-95%;
+  display: flex;
+  justify-content: center;
+  font-family: "GmarketSansBold";
+  font-size: 570%;
+}
+.ment{
+  display: flex;
+  justify-content: center;
+  color: #404040;
+  font-size: 20px;
+}
+
+
+.profile{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+.profile a{
+  margin-right: 10%;
+}
+.profile a img{
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 30px -10px #A0A0A0;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+.profile p{
+  font-size: 25px;
+}
+
+
+.projecttext{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+  font-family: "GmarketSansBold";
+}
+.project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -2%;
+  margin-bottom: 10%;
+}
+.project a{
+  margin-top: 100px;
+  width: 450px;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  text-decoration:none;
+}
+.project a img{
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px -15px #A0A0A0;
+  border: 2px solid black;
+}
+.project a div{
+  height: 170px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px -15px #A0A0A0;
+  margin-top: -80px;
+  background-color: white;
+  transition: background-color 0.5s;
+}
+.project a div:hover{
+  background-color: #87FFB7;
+}
+
+.project a div .pname{
+  color: black;
+  padding-top: 70px;
+  font-size: 20px;
+}
+.project a div .pment{
+  color: black;
+  margin-top: -10px;
+}
+
+
+.foot{
+  position: relative;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+  fill: #BFFFC3;
+  margin-top: -1900px;
+  z-index: -10;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: #BFFFC3;
+  margin-top: -100px;
+}
+.footer a{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 0.5s;
+  color: black;
+  text-decoration:none;
+}
+.footer a:hover{
+  background-color: black;
+  border-color: black;
+  color: #87FFB7;
+  transition: 0.5s;
+}
