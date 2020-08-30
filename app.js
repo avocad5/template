@@ -1,4 +1,5 @@
 const name = 'avocad5' //여기에 자기 엔트리아이디를 입력하세요
+const userid = '5d773c885b1f435931998d8e' //여기에 자기 유저아이디를 입력
 const gitname = 'avocad5' //여기에 자기 깃허브아이디를 입력하세요
 const nickname = '아보카도' //여기에 자기 별명을 입력하세요
 const myment = '더 참신하게, 더 재미있게, 더 멋지게' //여기에 상태메시지를 
@@ -13,9 +14,6 @@ const projectid = ['5e3f6015960df10024ab07a7','5e00a9134a413900566992bb','5e95ba
 for(var i = 0; i<projectname.length; i++){ //버튼 생성
   document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,4)}/${projectid[i]}.png"><div><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
 }
-var data = await fetch(`https://playentry.org/api/getUserByUsername/${name}`)
-var data2 = await data.json()
-var userid = data2._id
 var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${userid.substring(2,4)}/avatar_${userid}.png`
 document.title = `${nickname}의 공식사이트`
 document.getElementByClassName('name')[0].innerHTML = name
