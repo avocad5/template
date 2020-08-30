@@ -21,7 +21,7 @@ body{
   top: 0;
   left: 0;
 }
-.head path{
+.head {
   stroke: none;
   fill:#87FFB7;
 }
