@@ -6,6 +6,11 @@ const myment = '더 참신하게, 더 재미있게, 더 멋지게' //여기에 �
 const mywork = '알까기의왕' //여기에 자신의 대표작품을 입력하세요
 const career = '2년' //여기에 자신의 경력을 입력하세요
 const explanation = '코딩과 수학을 좋아하는 평법한 중1' //여기에 자기소개를 입력하세요
+const maincolor = '#87FFB7' //여기에 메인컬러를 입력하세요
+const subcolor = 'd'
+const theme = 'light' //light 또는 dark
+
+
 
 const projectname = ['3d ball run','알까기의왕','엔플러스엔진']; //여기에 자기 엔트리작품 이름을 입력하세요
 
