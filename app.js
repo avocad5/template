@@ -19,6 +19,7 @@ var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${u
 document.title = `${nickname}의 공식사이트`
 document.getElementByClassName('name')[0].innerHTML = name
 document.getElementByClassName('ment')[0].innerHTML = myment
+document.getElementByClassName('proimg')[0].href = `https://playentry.org/${name}`
 document.getElementByClassName('proimg')[0].innerHTML = `<img src="${avatar}">`
 document.getElementByClassName('about')[0].innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>`
 document.getElementByClassName('footer')[0].innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
