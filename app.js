@@ -7,7 +7,7 @@ const mywork = '알까기의왕' //여기에 자신의 대표작품을 입력하
 const career = '2년' //여기에 자신의 경력을 입력하세요
 const explanation = '코딩과 수학을 좋아하는 평법한 중1' //여기에 자기소개를 입력하세요
 const maincolor = '#87FFB7' //여기에 메인컬러를 입력하세요
-const subcolor = 'd'
+const subcolor = '#BFFFC3' //여기에 서브컬러를 
 const theme = 'light' //light 또는 dark
 
 
