@@ -12,4 +12,8 @@ const projectid = ['5e3f6015960df10024ab07a7','5e00a9134a413900566992bb','5e95ba
 for(var i = 0; i<projectname.length; i++){ //버튼 생성
   document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,5)}/${projectid[i]}.png"><div><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
 }
-document.getElementByClassName('about')[0].innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>
+
+document.title = `${nickname}의 공식사이트`
+document.getElementByClassName('name')[0].innerHTML = name
+document.getElementByClassName('ment')[0].innerHTML = myment
+document.getElementByClassName('about')[0].innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>`
