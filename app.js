@@ -16,9 +16,9 @@ for(var i = 0; i<projectname.length; i++){ //버튼 생성
 }
 var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${userid.substring(2,4)}/avatar_${userid}.png`
 document.title = `${nickname}의 공식사이트`
-document.getElementByClassName('name')[0].innerHTML = name
-document.getElementByClassName('ment')[0].innerHTML = myment
-document.getElementByClassName('proimg')[0].href = `https://playentry.org/${name}`
-document.getElementByClassName('proimg')[0].innerHTML = `<img src="${avatar}">`
-document.getElementByClassName('about')[0].innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>`
-document.getElementByClassName('footer')[0].innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
+document.querySelector("body > div.name").innerHTML = name
+document.querySelector("body > div.ment").innerHTML = myment
+document.querySelector("body > div.profile > a").href = `https://playentry.org/${name}`
+document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
+document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>소개 : ${explanation}</p>`
+document.querySelector("body > div.footer").innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
