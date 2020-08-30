@@ -149,6 +149,6 @@ body{
 .footer a:hover{
   background-color: black;
   border-color: black;
-  color: #87FFB7;
+  color: white;
   transition: 0.5s;
 }
