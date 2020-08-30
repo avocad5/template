@@ -13,8 +13,9 @@ const projectid = ['5e3f6015960df10024ab07a7','5e00a9134a413900566992bb','5e95ba
 for(var i = 0; i<projectname.length; i++){ //버튼 생성
   document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,4)}/${projectid[i]}.png"><div><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
 }
-var data = await(await fetch(`https://playentry.org/api/getUserByUsername/${name}`)).json();
-var userid = data._id
+var data = await fetch(`https://playentry.org/api/getUserByUsername/${name}`)
+var data2 = await data.json()
+var userid = data2._id
 var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${userid.substring(2,4)}/avatar_${userid}.png`
 document.title = `${nickname}의 공식사이트`
 document.getElementByClassName('name')[0].innerHTML = name
