@@ -25,6 +25,7 @@ var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${u
 document.title = `${nickname}의 공식사이트`
 document.querySelector("body > div.name").innerHTML = name
 document.querySelector("body > div.ment").innerHTML = myment
+document.querySelector("body > div.container > svg > path").style.fill = maincolor
 document.querySelector("body > div.profile > a").href = `https://playentry.org/${name}`
 document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
 document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>대표작 : ${mywork}</p><p>경력 : ${career}</p><p>소개 : ${explanation}</p>`
