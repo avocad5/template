@@ -21,7 +21,7 @@
       
       function load(){
         for(var i = 0; i<projectname.length; i++){ //버튼 생성
-          document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,4)}/${projectid[i]}.png"><div class="pdiv"><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
+          document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img class="pimg" src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,4)}/${projectid[i]}.png"><div class="pdiv"><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
         }
         var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${userid.substring(2,4)}/avatar_${userid}.png`
         document.title = `${nickname}의 공식사이트`
@@ -47,11 +47,15 @@
           p[i].style.color = 'white'
         }
         var pdiv = document.getElementsByClassName('pdiv')
+        var pimg = document.getElementsByClassName('pimg')
         for(var i = 0; i<pdiv.length; i++){
           pdiv[i].style.backgroundColor = '#505050'
+          pdiv[i].style.boxShadow = '0 0 30px -15px #111111'
+          pimg[i].style.boxShadow = '0 0 30px -15px #111111'
         }
         document.querySelector("body").style.backgroundColor = '#1E1E1E'
         document.querySelector("body > div.projecttext").style.color = 'white'
+        document.querySelector("body > div.profile > a > img").style.boxShadow = '0 0 30px -15px #111111'
       }
     </script>
     <title>자기소개</title>
