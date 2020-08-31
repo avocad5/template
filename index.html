@@ -31,7 +31,15 @@
         document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
         document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>대표작 : ${mywork}</p><p>경력 : ${career}</p><p>소개 : ${explanation}</p>`
         document.querySelector("body > div.footer").innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
-      }
+        var css = `.project a div:hover{background-color: ${maincolor};}`
+        var style = document.createElement('style');
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style);
+        }
     </script>
     <title>자기소개</title>
     <style>
@@ -125,10 +133,6 @@
         background-color: white;
         transition: background-color 0.5s;
       }
-      .project a div:hover{
-        background-color: #87FFB7;
-      }
-
       .project a div .pname{
         color: black;
         padding-top: 70px;
