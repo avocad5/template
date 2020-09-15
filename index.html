@@ -33,7 +33,7 @@
         document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
         document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>대표작 : ${mywork}</p><p>경력 : ${career}</p><p>소개 : ${explanation}</p>`
         document.querySelector("body > div.footer").innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
-        document.querySelector("body > div.footer").style.backgroundColor = 'subcolor'
+        document.querySelector("body > div.footer").style.backgroundColor = subcolor
         var css = `.project a div:hover{background-color: ${maincolor};}`
         var style = document.createElement('style');
         if (style.styleSheet) {
