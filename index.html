@@ -12,7 +12,7 @@
       const career = '2년' //여기에 자신의 경력을 입력하세요
       const explanation = '코딩과 수학을 좋아하는 평법한 중1' //여기에 자기소개를 입력하세요
       const maincolor = '#44DAFF' //여기에 메인컬러를 입력하세요 #87FFB7
-      const subcolor = '#BFFFC3' //여기에 서브컬러를 입력하세요
+      const subcolor = '#BFFFFC' //여기에 서브컬러를 입력하세요
       const projectname = ['3d ball run','알까기의왕','엔플러스엔진']; //여기에 자기 엔트리작품 이름을 입력하세요 (저는 3개만 했지만 여러분은 엄청 많이 하셔도 되요)
       const projectment = ['렉 안걸리는 3d!','인공지능과 함께 알까기를 즐겨보세요!','야, 너두 3d만들수있어'] //여기에 자기 엔트리작품 소개를 입력하세요 
       const projectid = ['5e3f6015960df10024ab07a7','5e00a9134a413900566992bb','5e95ba64614b6000ec78f37f'] //여기에 자기 엔트리작품 id를 입력하세요
@@ -28,10 +28,12 @@
         document.querySelector("body > div.name").innerHTML = name
         document.querySelector("body > div.ment").innerHTML = myment
         document.querySelector("body > div.container > svg > path").style.fill = maincolor
+        document.querySelector("body > svg.foot > path").style.fill = subcolor
         document.querySelector("body > div.profile > a").href = `https://playentry.org/${name}`
         document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
         document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>대표작 : ${mywork}</p><p>경력 : ${career}</p><p>소개 : ${explanation}</p>`
         document.querySelector("body > div.footer").innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
+        document.querySelector("body > div.footer").style.backgroundColor = 'subcolor'
         var css = `.project a div:hover{background-color: ${maincolor};}`
         var style = document.createElement('style');
         if (style.styleSheet) {
