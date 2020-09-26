@@ -21,20 +21,36 @@
       
       function load(){
         for(var i = 0; i<projectname.length; i++){
-          document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img class="pimg" src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,4)}/${projectid[i]}.png"><div class="pdiv"><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
+          document.getElementsByClassName('project')[0].innerHTML += '<a href="https://playentry.org/01079187959/' + 
+          String(projectid[i]) +
+          '"><img class="pimg" src="https://playentry.org/uploads/thumb/' +
+          String(projectid[i].substring(0, 4)) +
+          "/" +
+          String(projectid[i]) +
+          '.png"><div class="pdiv"><p class="pname"><strong>' +
+          String(projectname[i])
+          '</strong></p><p class="pment">' +
+          String(projectment[i]) +
+          "</p></div></a>";
         }
-        var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${userid.substring(2,4)}/avatar_${userid}.png`
-        document.title = `${nickname}의 공식사이트`
+        var avatar = "https://playentry.org/uploads/profile/" +
+        String(userid.substring(0, 2)) +
+        "/" +
+        String(userid.substring(2, 4)) +
+        "/avatar_" +
+        String(userid) +
+        ".png";
+        document.title = nickname + '의 공식사이트'
         document.querySelector("body > div.name").innerHTML = name
         document.querySelector("body > div.ment").innerHTML = myment
         document.querySelector("body > div.container > svg > path").style.fill = maincolor
         document.querySelector("body > svg.foot > path").style.fill = subcolor
-        document.querySelector("body > div.profile > a").href = `https://playentry.org/${name}`
-        document.querySelector("body > div.profile > a").innerHTML = `<img src="${avatar}">`
-        document.querySelector("body > div.profile > div").innerHTML = `<p>이름 : ${name}</p><p>별명 : ${nickname}</p><p>대표작 : ${mywork}</p><p>경력 : ${career}</p><p>소개 : ${explanation}</p>`
-        document.querySelector("body > div.footer").innerHTML = `<a href="https://github.com/${gitname}"><span>Github</span></a><a href="https://playentry.org/${name}#!/"><span>Entry</span></a>`
+        document.querySelector("body > div.profile > a").href = 'https://playentry.org/' + name
+        document.querySelector("body > div.profile > a").innerHTML = '<img src=' + avatar + '>'
+        document.querySelector("body > div.profile > div").innerHTML = '<p>이름 : ' + name + '</p><p>별명 : ' + nickname + '</p><p>대표작 : ' + mywork + '</p><p>경력 : ' + career + '</p><p>소개 : ' + explanation + '</p>'
+        document.querySelector("body > div.footer").innerHTML = '<a href="https://github.com/' + gitname + '><span>Github</span></a><a href="https://playentry.org/' + name + '#!/"><span>Entry</span></a>'
         document.querySelector("body > div.footer").style.backgroundColor = subcolor
-        var css = `.project a div:hover{background-color: ${maincolor};}`
+        var css = '.project a div:hover{background-color: ' + maincolor + ';}'
         var style = document.createElement('style');
         if (style.styleSheet) {
             style.styleSheet.cssText = css;
